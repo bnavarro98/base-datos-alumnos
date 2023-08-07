@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Base de Datos de Alumnos</title>
+</head>
+<body>
+  <header>
+    <h1>Base de Datos de Alumnos</h1>
+  </header>
+  <main>
+    <section id="alumnos-list">
+      <!-- Aquí se mostrará la lista de alumnos -->
+    </section>
+    <section id="alta-form">
+      <h2>Dar de Alta Alumno</h2>
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="apellidos" placeholder="Apellidos">
+      <input type="number" id="edad" placeholder="Edad">
+      <button id="alta-btn">Dar de Alta</button>
+    </section>
+    
+    <section id="inscripcion">
+        <h2>Inscripción a Clase</h2>
+        <label for="alumnos-dropdown">Seleccionar Alumno:</label>
+        <select id="alumnos-dropdown" aria-label="Seleccionar Alumno">
+          <!-- Opciones de alumnos -->
+        </select>
+        <input type="text" id="materia" placeholder="Materia">
+        <button id="inscripcion-btn">Inscribir</button>
+      </section>
+      <section id="calificaciones">
+        <h2>Asignar Calificaciones</h2>
+        <label for="alumnos-calif-dropdown">Seleccionar Alumno:</label>
+        <select id="alumnos-calif-dropdown" aria-label="Seleccionar Alumno">
+          <!-- Opciones de alumnos -->
+        </select>
+        <input type="number" id="calificacion" placeholder="Calificación">
+        <button id="calificacion-btn">Asignar Calificación</button>
+      </section>
+    <section id="grupos">
+      <h2>Crear Grupo</h2>
+      <input type="text" id="nombre-grupo" placeholder="Nombre del Grupo">
+      <button id="grupo-btn">Crear Grupo</button>
+    </section>
+    
+    <section id="buscar">
+      <h2>Buscar Alumnos</h2>
+      <label for="buscar-nombre">Buscar por Nombre:</label>
+      <input type="text" id="buscar-nombre" placeholder="Nombre">
+      <button id="buscar-nombre-btn">Buscar</button>
+      
+      <label for="buscar-apellido">Buscar por Apellido:</label>
+      <input type="text" id="buscar-apellido" placeholder="Apellido">
+      <button id="buscar-apellido-btn">Buscar</button>
+    </section>
+    
+    <section id="promedio">
+      <h2>Promedios</h2>
+      <label for="alumnos-dropdown-promedio">Seleccionar Alumno:</label>
+      <select id="alumnos-dropdown-promedio" aria-label="Seleccionar Alumno">
+        <!-- Opciones de alumnos -->
+      </select>
+      <button id="promedio-alumno-btn">Obtener Promedio del Alumno</button>
+      <button id="promedio-grupo-btn">Obtener Promedio del Grupo</button>
+    </section>
+    
+    <section id="ordenar">
+      <h2>Ordenar Alumnos por Calificación</h2>
+      <button id="ordenar-ascendente-btn">Ordenar Ascendente</button>
+      <button id="ordenar-descendente-btn">Ordenar Descendente</button>
+    </section>
+
+    <section id="resultados">
+        <!-- Aquí se mostrarán los resultados -->
+      </section>
+    
+    <section id="limpiar">
+      <h2>Limpiar Pantalla</h2>
+      <button id="limpiar-btn">Limpiar</button>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
